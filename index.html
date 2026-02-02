@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>National Grant Access Program | Demonstration Platform</title>
+  <meta name="description" content="High‑fidelity demonstration of a national grant access platform. All content, recipients, and testimonials are illustrative samples." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0a0e1a;
+      --panel:#11162e;
+      --glass:rgba(255,255,255,.08);
+      --accent:#3fa9ff;
+      --accent2:#6dffcc;
+      --text:#eef2fb;
+      --muted:#a6adc5;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto;background:radial-gradient(1200px 600px at 15% -10%,#1a2355 0%,transparent 60%),radial-gradient(1000px 500px at 90% 10%,#0f3d6d 0%,transparent 55%),var(--bg);color:var(--text)}
+    a{text-decoration:none;color:inherit}
+
+    .container{max-width:1200px;margin:auto;padding:24px}
+
+    /* NAV */
+    nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
+    .brand{font-weight:900;letter-spacing:.5px}
+    .nav-links{display:flex;gap:18px;font-size:14px;color:var(--muted)}
+
+    /* HERO */
+    .hero{position:relative;border-radius:26px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02));box-shadow:0 40px 90px rgba(0,0,0,.45)}
+    .hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;padding:60px}
+    .badge{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;background:var(--glass);backdrop-filter:blur(10px);font-weight:600;font-size:13px}
+    .badge img{height:18px}
+    h1{font-size:58px;line-height:1.05;margin:18px 0}
+    .lead{font-size:18px;color:var(--muted);max-width:560px}
+    .cta{display:flex;gap:14px;margin-top:28px}
+    .btn{padding:14px 20px;border-radius:14px;font-weight:700;border:1px solid rgba(255,255,255,.15);background:linear-gradient(135deg,var(--accent),#7bb9ff);color:#07101f}
+    .btn.alt{background:transparent;color:var(--text)}
+    .flag{position:absolute;right:-40px;top:-40px;width:320px;opacity:.35}
+
+    /* PARALLAX */
+    .parallax{transform-style:preserve-3d}
+    .float{transform:translateZ(40px)}
+
+    /* SECTIONS */
+    section{margin:72px 0}
+    h2{font-size:36px;margin-bottom:12px}
+    .section-lead{color:var(--muted);max-width:720px}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:18px;backdrop-filter:blur(10px)}
+    .card img{width:100%;height:210px;object-fit:cover;border-radius:14px}
+    .amount{font-size:22px;font-weight:900;margin-top:10px}
+    .note{font-size:12px;color:var(--muted)}
+
+    /* PROCESS */
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}
+    .step-num{font-weight:900;font-size:28px;color:var(--accent2)}
+
+    /* TESTIMONIALS */
+    .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .quote{font-size:14px}
+    .source{font-size:12px;color:var(--muted);margin-top:8px}
+
+    /* FAQ */
+    details{background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px;margin-bottom:12px}
+    summary{cursor:pointer;font-weight:600}
+
+    /* MUSIC */
+    .music{display:flex;align-items:center;gap:12px;margin-top:18px;color:var(--muted);font-size:14px}
+
+    /* FOOTER */
+    footer{border-top:1px solid rgba(255,255,255,.12);padding:32px 0;color:var(--muted);margin-top:72px}
+
+    @media(max-width:900px){
+      .hero-inner{grid-template-columns:1fr;padding:32px}
+      h1{font-size:42px}
+      .grid,.steps{grid-template-columns:repeat(2,1fr)}
+      .quotes{grid-template-columns:1fr}
+      nav{flex-direction:column;gap:12px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <nav>
+    <div class="brand">National Grant Access Program</div>
+    <div class="nav-links">
+      <a href="#mission">Mission</a>
+      <a href="#process">Process</a>
+      <a href="#recipients">Recipients</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="hero parallax" id="hero">
+    <img class="flag float" src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="USA Flag" />
+    <div class="hero-inner float">
+      <div>
+        <span class="badge"><img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Seal_of_the_United_States_Department_of_Treasury.svg" alt="Seal"> Demonstration Platform</span>
+        <h1>Expanding Access to Capital Through Structured Grant Programs</h1>
+        <p class="lead">This enterprise‑grade demonstration showcases how a modern national grant access portal could operate — combining transparency, structured review, and community‑focused funding pathways.</p>
+        <div class="cta">
+          <a class="btn" href="https://wa.me/15079617851" target="_blank" rel="noopener">Contact via WhatsApp</a>
+          <a class="btn alt" href="#process">View Grant Process</a>
+        </div>
+      </div>
+      <div class="card">
+        <strong>Illustrative Funding Range</strong>
+        <p class="amount">$50,000 – $250,000</p>
+        <p class="note">Displayed amounts are representative samples for demonstration only.</p>
+      </div>
+    </div>
+  </div>
+
+  <section id="mission">
+    <h2>Mission & Vision</h2>
+    <p class="section-lead">Our mission is to demonstrate a transparent, accountable, and inclusive funding framework that supports innovation, economic resilience, and long‑term community growth.</p>
+    <div class="grid">
+      <div class="card"><strong>Mission</strong><p class="note">To model how grant platforms can simplify access to capital while maintaining rigorous review standards.</p></div>
+      <div class="card"><strong>Vision</strong><p class="note">A future where funding opportunities are clearly communicated, responsibly administered, and equitably accessible.</p></div>
+      <div class="card"><strong>Values</strong><p class="note">Transparency, accountability, equity, and public trust.</p></div>
+      <div class="card"><strong>Impact Focus</strong><p class="note">Small businesses, nonprofits, education, infrastructure, and healthcare.</p></div>
+    </div>
+  </section>
+
+  <section id="process">
+    <h2>Illustrative Grant Process</h2>
+    <p class="section-lead">A structured, multi‑stage review flow modeled after established funding frameworks.</p>
+    <div class="steps">
+      <div class="card"><div class="step-num">01</div><strong>Application</strong><p class="note">Submission of required documentation and eligibility information.</p></div>
+      <div class="card"><div class="step-num">02</div><strong>Review</strong><p class="note">Preliminary screening followed by detailed evaluation.</p></div>
+      <div class="card"><div class="step-num">03</div><strong>Verification</strong><p class="note">Compliance checks and clarification requests.</p></div>
+      <div class="card"><div class="step-num">04</div><strong>Notification</strong><p class="note">Award or non‑award communication issued.</p></div>
+    </div>
+  </section>
+
+  <section id="recipients">
+    <h2>Sample Grant Recipients</h2>
+    <p class="section-lead">Stock imagery portraying representative scenarios. Individuals shown are not real recipients.</p>
+    <div class="grid">
+      <div class="card"><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df" alt="Sample"><div class="amount">$75,000</div><div class="note">Business Expansion</div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" alt="Sample"><div class="amount">$120,000</div><div class="note">Community Development</div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1543269865-cbf427effbad" alt="Sample"><div class="amount">$95,000</div><div class="note">Education Program</div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Sample"><div class="amount">$150,000</div><div class="note">Infrastructure Support</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Public Feedback (Illustrative)</h2>
+    <div class="quotes">
+      <div class="card"><div class="quote">“Clear communication and a professional review structure. This platform demonstrates best‑practice grant administration.”</div><div class="source">— Sample Facebook Comment</div></div>
+      <div class="card"><div class="quote">“The transparency of the process makes funding pathways easier to understand.”</div><div class="source">— Sample LinkedIn Post</div></div>
+      <div class="card"><div class="quote">“A strong example of how modern funding portals should be designed.”</div><div class="source">— Sample X Reply</div></div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <details><summary>Is this a real government program?</summary><p class="note">No. This website is a demonstration of design and functionality only.</p></details>
+    <details><summary>Are the grant amounts real?</summary><p class="note">No. All figures shown are illustrative samples.</p></details>
+    <details><summary>Can funding be applied for here?</summary><p class="note">This platform does not accept real applications.</p></details>
+    <details><summary>Why build a demo like this?</summary><p class="note">To showcase UX, structure, and communication standards for grant platforms.</p></details>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Demonstration Inquiry</h2>
+    <p class="section-lead">For demonstration walkthroughs or design inquiries, contact via WhatsApp.</p>
+    <a class="btn" href="https://wa.me/15079617851" target="_blank">Open WhatsApp</a>
+    <div class="music">
+      <span>Ambient background music:</span>
+      <audio controls loop>
+        <source src="https://cdn.pixabay.com/audio/2022/08/02/audio_3c3a4f5a2c.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </section>
+
+  <footer>
+    <strong>Disclosure</strong>
+    <p class="note">This website is a fictional demonstration. It does not represent a real government entity, funding program, or recipients.</p>
+  </footer>
+
+</div>
+
+<script>
+  const hero = document.getElementById('hero');
+  hero.addEventListener('mousemove', (e)=>{
+    const r = hero.getBoundingClientRect();
+    const x = (e.clientX - r.left)/r.width - .5;
+    const y = (e.clientY - r.top)/r.height - .5;
+    hero.querySelectorAll('.float').forEach(el=>{
+      el.style.transform = `translate3d(${x*20}px, ${y*20}px, 40px)`;
+    });
+  });
+  hero.addEventListener('mouseleave', ()=>{
+    hero.querySelectorAll('.float').forEach(el=>{
+      el.style.transform = 'translate3d(0,0,40px)';
+    });
+  });
+</script>
+
+</body>
+</html>
